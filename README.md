@@ -68,4 +68,4 @@ MIT
 
 ## Author
 
-p.karbowniczek@globkurier.pl
+it@globkurier.pl

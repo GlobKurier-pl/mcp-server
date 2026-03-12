@@ -66,4 +66,4 @@ MIT
 
 ## Autor
 
-p.karbowniczek@globkurier.pl
+it@globkurier.pl
