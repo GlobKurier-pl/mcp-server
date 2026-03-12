@@ -20,9 +20,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/globkurier/globkurier-api-mcp"
-Repository = "https://github.com/globkurier/globkurier-api-mcp"
-Documentation = "https://github.com/globkurier/globkurier-api-mcp#readme"
+Homepage = "https://github.com/GlobKurier-pl/mcp-server"
+Repository = "https://github.com/GlobKurier-pl/mcp-server"
+Documentation = "https://github.com/GlobKurier-pl/mcp-server#readme"
 
 dependencies = [
     "fastmcp>=2.0.0",
