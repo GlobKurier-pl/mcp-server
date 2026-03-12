@@ -3,6 +3,10 @@
   "name": "io.github.globkurier-pl/mcp-server",
   "title": "GlobKurier Shipping MCP",
   "description": "Search shipping products across DPD, InPost, DHL, FedEx, UPS, GLS and more. Track shipments, get pricing and generate purchase links via GlobKurier API.",
+  "repository": {
+    "url": "https://github.com/GlobKurier-pl/mcp-server",
+    "source": "github"
+  },
   "version": "0.2.0",
   "packages": [
     {
