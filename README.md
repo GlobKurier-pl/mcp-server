@@ -1,4 +1,4 @@
-<!-- mcp-name: io.github.globkurier/globkurier-api-mcp -->
+<!-- mcp-name: io.github.globkurier-pl/mcp-server -->
 
 # GlobKurier MCP Server
 
