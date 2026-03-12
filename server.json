@@ -1,24 +1,24 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.globkurier-pl/mcp-server",
+  "name": "io.github.GlobKurier-pl/mcp-server",
   "title": "GlobKurier Shipping MCP",
-  "description": "Search shipping products across DPD, InPost, DHL, FedEx, UPS, GLS and more. Track shipments, get pricing and generate purchase links via GlobKurier API.",
+  "description": "Track shipments and search shipping products (DPD, InPost, DHL, FedEx, UPS, GLS) via GlobKurier API.",
   "repository": {
     "url": "https://github.com/GlobKurier-pl/mcp-server",
     "source": "github"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "globkurier-api-mcp",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "transport": { "type": "stdio" }
     }
   ],
   "remotes": [
     {
-      "transportType": "http",
+      "type": "streamable-http",
       "url": "https://mcp.globkurier.pl/mcp"
     }
   ]

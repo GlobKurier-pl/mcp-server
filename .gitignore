@@ -54,3 +54,6 @@ Thumbs.db
 
 # Claude Code
 .claude/
+
+# MCP publisher tokens
+.mcpregistry_*
