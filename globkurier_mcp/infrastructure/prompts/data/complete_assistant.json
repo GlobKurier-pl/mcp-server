@@ -1,0 +1,15 @@
+{
+  "name": "complete_assistant",
+  "description": "Kompletny asystent GlobKurier AI z wszystkimi promptami połączonymi w jedno. Łączy: system + developer + policy + fallback + advanced_search (+ debug jeśli dev mode). Użyj tego do pełnej konfiguracji asystenta.",
+  "tags": ["complete", "all-in-one", "assistant", "production-ready"],
+  "meta": {
+    "category": "complete",
+    "priority": "highest",
+    "language": "pl",
+    "includes": ["system", "developer", "policy", "fallback", "advanced_search"]
+  },
+  "role": "user",
+  "composite": true,
+  "includes": ["system", "developer", "policy", "fallback", "advanced_search"],
+  "supports_user_context": true
+}

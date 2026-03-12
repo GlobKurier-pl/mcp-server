@@ -1,0 +1,62 @@
+[project]
+name = "globkurier-api-mcp"
+version = "0.2.0"
+description = "MCP server for GlobKurier API - Hexagonal Architecture with CQRS"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "GlobKurier", email = "it@globkurier.pl" }
+]
+keywords = ["mcp", "shipping", "logistics", "globkurier", "dpd", "inpost", "courier"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet",
+]
+
+[project.urls]
+Homepage = "https://github.com/globkurier/globkurier-api-mcp"
+Repository = "https://github.com/globkurier/globkurier-api-mcp"
+Documentation = "https://github.com/globkurier/globkurier-api-mcp#readme"
+
+dependencies = [
+    "fastmcp>=2.0.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+]
+
+[project.scripts]
+globkurier-mcp = "globkurier_mcp:main"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "mypy>=1.8.0",
+    "ruff>=0.2.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

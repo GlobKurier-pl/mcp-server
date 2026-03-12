@@ -1,0 +1,14 @@
+{
+  "name": "debug",
+  "description": "Prompt trybu deweloperskiego. UWAGA: Tylko dla środowiska dev! Pokazuje szczegóły działania narzędzi, błędy i sugestie debugowania. NIE używaj w produkcji.",
+  "tags": ["debug", "development", "troubleshooting"],
+  "meta": {
+    "category": "debug",
+    "priority": "low",
+    "language": "pl",
+    "environment": "development",
+    "production_safe": false
+  },
+  "role": "user",
+  "content": "Jesteś w trybie deweloperskim.\n\nJeśli musisz wywołać narzędzie, ale brakuje parametrów:\n- powiedz, czego brakuje,\n- wyjaśnij, jak narzędzie działa (krótko),\n- nie ukrywaj błędów wejściowych.\n\nW trakcie developmentu:\n- jeśli źle dobrałeś tool, napisz: „Zamiast tego powinienem użyć {tool_name}\".\n- jeśli użyłeś resource, ale istnieje tool → przesuń logikę do tool.\n- jeśli logika jest niejasna → dopytaj użytkownika.\n\nW produkcji ten prompt może być wyłączony."
+}
