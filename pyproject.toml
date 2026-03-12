@@ -19,11 +19,6 @@ classifiers = [
     "Topic :: Internet",
 ]
 
-[project.urls]
-Homepage = "https://github.com/GlobKurier-pl/mcp-server"
-Repository = "https://github.com/GlobKurier-pl/mcp-server"
-Documentation = "https://github.com/GlobKurier-pl/mcp-server#readme"
-
 dependencies = [
     "fastmcp>=2.0.0",
     "httpx>=0.27.0",
@@ -31,6 +26,11 @@ dependencies = [
     "pydantic>=2.0.0",
     "pydantic-settings>=2.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/GlobKurier-pl/mcp-server"
+Repository = "https://github.com/GlobKurier-pl/mcp-server"
+Documentation = "https://github.com/GlobKurier-pl/mcp-server#readme"
 
 [project.scripts]
 globkurier-mcp = "globkurier_mcp:main"
